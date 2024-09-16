@@ -41,7 +41,7 @@
         const age = document.getElementById('age').value;
     
         if (symptoms.trim() !== "" && age.trim() !== "") {
-            fetch('https://medicine-suggestor.onrender.com', {
+            fetch('https://medicine-1.onrender.com/api/suggestions', {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
               body: JSON.stringify({ symptoms, age })
